@@ -11,26 +11,35 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
     <!-- Custom JS -->
     <script src="index.js"></script>
 </head>
 
 <body>
-
-
     <div class="container">
-        <form>
-            <div class="form-group">
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Title">
-            </div>
-            <div class="form-group">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter the contents..."></textarea>
-            </div>
+        <div class="inputForm my-3">
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="title" placeholder="Title">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="contents" rows="3"
+                        placeholder="Enter the contents..."></textarea>
+                </div>
 
-            <button type="button" onclick="handleClick" class="btn btn-outline-primary">Submit!</button>
-        </form>
+                <div class="text-center">
+                        <button type="button" onclick="handleClick()" class="btn btn-outline-primary">Submit!</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="cards my-3" id="cardContents">
+        </div>
     </div>
-    
+
     <!-- jQuery, Popper.js, and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
