@@ -41,4 +41,7 @@ function handleClick() {
     } 
 
     createCard(title, contents);
+
+    //Clear input fields
+    document.querySelector('#title').value = document.querySelector('#contents').value = '';
 }
